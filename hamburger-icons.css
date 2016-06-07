@@ -1,0 +1,122 @@
+
+
+body {
+	background-color:darkslateblue;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+
+.icon {
+	position: relative;
+	width: 67.5px;
+	height: 50px;
+	background-color: indianred;
+	border-radius: 3px;
+	box-shadow: 2px 2px 15px black;
+}
+
+.lines {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: inherit;
+	align-items: center;
+	transition-duration: .3s;
+}
+
+.lines:hover {
+	cursor: pointer;
+}
+
+.lines-1, .lines-2, .lines-3 {
+	width: 60%;
+	height: 4px;
+	background: white;
+	border-radius: 2px;
+	transition-duration: .3s;
+}
+
+.lines-1 {
+	margin-top: 8px;
+}
+
+.lines-3 {
+	margin-bottom: 8px;
+}
+
+/****effects-1****/
+
+.icon-1 {
+	position: relative;
+}
+
+.lines:hover .line-2 {
+	width: 0;
+}
+
+.lines:hover .line-1 {
+	transform: rotate(225deg);
+	position: absolute;
+	top: 15px;
+	left: 16px;
+	width: 50%;
+}
+
+.lines:hover .line-3 {
+	transform: rotate(-45deg);
+	position: absolute;
+	bottom: 15px;
+	left: 16px;
+	width: 50%;
+}
+
+/****effects-2 and effects-3****/
+
+.lines:hover .line-1-1 {
+	transform: rotate(-225deg);
+	width: 35%;
+	margin: 13.8px 22px 0 0;
+}
+
+.lines:hover .line-1-2 {
+	transform: rotate(225deg);
+	width: 35%;
+	margin: 13.8px 0 0 22px;
+}
+
+.lines:hover .line-3-1 {
+	transform: rotate(225deg);
+	width: 35%;
+	margin: 0 22px 13.8px 0;
+}
+
+.lines:hover .line-3-2 {
+	transform: rotate(-225deg);
+	width: 35%;
+	margin: 0 0 13.8px 22px;
+}
+
+
+.lines:hover .line-2-1, .lines:hover .line-2-2{
+	width: 50%;
+}
+
+/****effects-3****/
+
+.lines:hover .line-1-3, .lines:hover .line-3-3 {
+	transform: rotate(270deg);
+	width: 25%;
+}
+
+.lines:hover .line-1-3 {
+	margin-top: 15px;
+}
+
+.lines:hover .line-2-3 {
+	width: 50%;
+}
+
+.lines:hover .line-3-3 {
+	margin-bottom: 15px;
+}
